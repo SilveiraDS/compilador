@@ -1,0 +1,8 @@
+#!/bin/bash
+rm ./obj/*.o
+gcc  -g  -c -o ./obj/lex.o ./src/lex.c
+gcc  -g  -c -o ./obj/parser.o ./src/parser.c
+gcc  -g  -c -o ./obj/main.o ./src/main.c
+gcc  -g  -c -o ./obj/error.o ./src/error.c
+gcc  -g  -c -o ./obj/interpr.o ./src/interpr.c
+gcc ./obj/*.o -o ./bin/interpr
